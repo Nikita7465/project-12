@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./index.css";
+import Card from "./components/card/Card";
+import CardMore from "./components/card-more/CardMore";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app">
+      <div className="container">
+        <div className="cardWrap">
+          <Card
+            imgUrl="python.png"
+            title="Learn Python Programming Mastercalss"
+            author="by Tim Buchalka"
+            text="This Python For Beginners Course Teaches You The Python Language Fast. Includes Python Online Training With Python 3"
+            hoursCount={42}
+            lessonsCount={31}
+            levelCount="Medium"
+          />
+
+          <CardMore
+            imgUrl="python-bg.png"
+            title="Learn Python Programming Mastercalss"
+          />
+        </div>
+
+        <div className="cardWrap">
+          <Card
+            imgUrl="react.png"
+            title="React - The Complete Guide"
+            author="by Maximilian Schwarzmüller"
+            text="Dive in and learn React 16.8 from scratch! Learn Reactjs, Hooks, Redux, React Routing, Animations, Next.js and way more!"
+            hoursCount={45}
+            lessonsCount={146}
+            levelCount="All"
+          />
+
+          <CardMore imgUrl="react-bg.png" title="React - The Complete Guide" />
+        </div>
+
+        <div className="cardWrap">
+          <Card
+            imgUrl="sketch.png"
+            title="Sketch from A to Z: Become an App Designer"
+            author="by Joseph Angelo Todaro"
+            text="Finally a comprehensive guide to using Sketch for designing mobile applications. Learn to design an app from A to Z."
+            hoursCount={3.5}
+            lessonsCount={15}
+            levelCount="Easy"
+          />
+
+          <CardMore
+            imgUrl="sketch-bg.png"
+            title="Sketch from A to Z: Become an App Designer"
+          />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;

@@ -1,0 +1,95 @@
+.card {
+  width: 860px;
+  min-height: 220px;
+  padding: 40px;
+  display: flex;
+  background: white;
+  border-radius: 16px;
+}
+
+.cardTextWrap {
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.cardTitle {
+  color: #081f32;
+  font-size: 22px;
+  font-family: serif;
+}
+
+.cardAuthor {
+  color: #a5adbb;
+  font-size: 16px;
+}
+
+.cardText {
+  color: #6e798c;
+  font-size: 16px;
+}
+
+.cardDesc {
+  margin-top: 10px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.desc {
+  color: #6e798c;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.desc span {
+  color: black;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+@media (max-width: 900px) {
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cardTextWrap {
+    width: 100%;
+    order: 3;
+    min-width: 500px;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardTextWrap {
+    width: 100%;
+    order: 3;
+    min-width: 200px;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardTextWrap {
+    order: 1;
+  }
+
+  .cardDesc {
+    margin: 30px 0 0;
+    order: 2;
+  }
+
+  .cardImg {
+    display: none;
+  }
+}
