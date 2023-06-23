@@ -1,7 +1,25 @@
-.btn {
-  width: 100px;
-  height: 40px;
-  border-radius: 8px;
-  background: white;
-  color: none;
+.cardMore {
+  position: relative;
+}
+
+.cardMoreBg {
+  position: absolute;
+}
+
+.cardMoreTitle {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+
+  color: white;
+  width: 200px;
+  font-size: 26px;
+  font-family: serif;
+}
+
+@media (max-width: 1200px) {
+  .cardMore {
+    display: none;
+  }
 }

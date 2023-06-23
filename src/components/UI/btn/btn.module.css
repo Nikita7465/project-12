@@ -1,0 +1,21 @@
+.btnWrap {
+  max-width: 240px;
+  display: flex;
+  justify-content: right;
+  position: absolute;
+  bottom: 20px;
+  left: 120px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  background: white;
+  color: unset;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
