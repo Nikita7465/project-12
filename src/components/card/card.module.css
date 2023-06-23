@@ -51,3 +51,45 @@
   margin-left: 15px;
   margin-right: 5px;
 }
+
+@media (max-width: 900px) {
+  .card {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cardTextWrap {
+    width: 100%;
+    order: 3;
+    min-width: 500px;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .cardTextWrap {
+    width: 100%;
+    order: 3;
+    min-width: 200px;
+    margin: 30px auto 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .cardTextWrap {
+    order: 1;
+  }
+
+  .cardDesc {
+    margin: 30px 0 0;
+    order: 2;
+  }
+
+  .cardImg {
+    display: none;
+  }
+}

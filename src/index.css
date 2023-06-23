@@ -29,3 +29,9 @@
     width: max-content;
   }
 }
+
+@media (max-width: 900px) {
+  .cardWrap {
+    width: 100%;
+  }
+}
